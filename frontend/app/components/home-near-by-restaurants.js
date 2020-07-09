@@ -15,6 +15,8 @@ export default Component.extend({
   /**
    * Fetches the near-by restaurants.
    */
+
+  //test
   fetchNearbyRestaurants() {
     if (this.get("geolocation")) {
       this.get("restaurantService")
