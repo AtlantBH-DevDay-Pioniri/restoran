@@ -25,6 +25,8 @@ public class DriverSupport {
     private Capabilities capabilities;
 
     public WebDriver initDriver(String browser) {
+
+        System.setProperty("webdriver.gecko.driver","C:\\Users\\Nedim\\Desktop\\webDrivers\\geckodriver.exe");
         java.util.Properties p = new Properties();
 
         if (browser.equals("firefox")) {

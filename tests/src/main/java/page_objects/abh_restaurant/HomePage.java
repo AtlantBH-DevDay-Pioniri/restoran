@@ -25,7 +25,19 @@ public class HomePage extends PageBase {
 
     @FindBy(css = MAIN_TEXT_CSS)
     private WebElement mainText;
-
+    
+    @FindBy(id = "search")
+    private WebElement searchBox;
+    
+    @FindBy(xpath = "//*[@id=\"main\"]/div/div/form/button")
+    private WebElement search;
+    
+    @FindBy(css = "li.nav-link-custom:nth-child(3)")
+    private WebElement admin;
+    
+    public WebElement getSearchButton () {
+    	return search;
+    }
 
     public List<WebElement> getNavBarList(){
         return navBarList;
@@ -33,6 +45,14 @@ public class HomePage extends PageBase {
 
     public WebElement getMainText(){
         return mainText;
+    }
+    
+    public WebElement getSearchBox(){
+    	return searchBox;
+    }
+    
+    public WebElement getAdmin() {
+    	return admin;
     }
 
     public LoginPage clickLoginButton(int index){

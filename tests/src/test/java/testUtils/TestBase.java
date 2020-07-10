@@ -15,8 +15,8 @@ public abstract class TestBase {
         driver.get(url);
     }
 
-    @AfterTest(alwaysRun = true)
-    public void tearDown() {
-        driver.quit();
-    }
+    //@AfterTest(alwaysRun = true)
+    //public void tearDown() {
+      //  driver.quit();
+   // }
 }
